@@ -1,0 +1,68 @@
+.content {
+  margin: 0;
+  padding-left: 120px;
+  padding-right: 120px;
+  
+
+  &__heading {
+    padding-top: 64px;
+    padding-bottom: 38px;
+    width: max-content;
+    margin: auto;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+    
+
+    &::after {
+      content: "";
+      height: 20px;
+      display: block;
+      background-image: url("../images/crown.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: 520px) and (max-width: 730px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: 320px) and (max-width: 519px) {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: 1;
+  padding-top: 104px;
+
+ 
+  &__first {
+    font-size: 48px;
+    line-height: 48px;
+    flex-basis: 50%;
+    letter-spacing: -1.5px;
+    font-weight: bold;
+
+    @media (min-width: 320px) and (max-width: 730px) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__paragraph {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: 320px) and (max-width: 730px) {
+    flex-direction: column;
+    padding-top: 64px;
+  }
+}

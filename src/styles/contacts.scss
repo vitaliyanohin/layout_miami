@@ -1,0 +1,100 @@
+@import "variables";
+@import "mixins";
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 400px;
+    gap: 22px;
+  }
+  
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 412px;
+    margin-bottom: 88px;
+  }
+}
+
+.info__text {
+  margin: 0;
+  margin-bottom: 8px;
+
+  &--marg {
+    margin: 0;
+    margin-bottom: 28px;
+  }
+}
+
+.modify {
+  color: #9fadc2;
+}
+
+.info__item {
+  display: flex;
+  flex-direction: column;
+  width: 152px;
+  margin-right: 108px;
+}
+
+.form__item {
+  width: 92%;
+  background-color: $main-gray;
+  border: 1px solid $main-white;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 17px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #b9c1ce;
+
+  &--text-area {
+    width: 92%;
+    height: 144px;
+    resize: none;
+    border: none;
+    background-color: $main-gray;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    padding: 17px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #b9c1ce;
+  }
+}
+
+.form__button {
+  @include form__button;
+}
+
+.form__button:hover {
+  @include hover__button($main-white,#004ba1);
+}
+
+@media (min-width: 320px) and (max-width: 730px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  
+    &__info {
+      flex-direction: column;
+      width: 320px;
+      padding-left: 21px;
+    }
+
+    &__form {
+      width: 280px;
+      padding-left: 0;
+      margin-bottom: 60px;
+    }
+  }
+  
+  .info__item {
+    margin: 0;
+  }
+}

@@ -1,7 +1,26 @@
-@import "utils";
 @import "fonts";
-@import "typography";
+@import "header";
+@import "content";
+@import "gallery";
+@import "consultation";
+@import "testimonials";
+@import "contacts";
+@import "footer";
+@import "reset";
+@import "variables";
 
 body {
-  background: $c-gray;
+  font-size: 16px;
+  line-height: 27px;
+  background-color: #f7f8ff;
+}
+
+.blue-color {
+  margin: 0;
+  font-weight: bold;
+  color: $main-blue;
+}
+
+.main {
+  background-color: $main-gray;
 }
