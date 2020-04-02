@@ -1,0 +1,114 @@
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .contact__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 700px;
+    height: 400px;
+    gap: 22px; }
+  .contact__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 412px;
+    margin-bottom: 88px; }
+
+.info__text {
+  margin: 0;
+  margin-bottom: 8px; }
+  .info__text--marg {
+    margin: 0;
+    margin-bottom: 28px; }
+
+.modify {
+  color: #9fadc2; }
+
+.info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 152px;
+  margin-right: 108px; }
+
+.form__item {
+  width: 92%;
+  background-color: #f2f2f2;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 17px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #b9c1ce; }
+  .form__item--text-area {
+    width: 92%;
+    height: 144px;
+    resize: none;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    padding: 17px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #b9c1ce; }
+
+.form__button {
+  width: 100%;
+  height: 56px;
+  margin-top: 24px;
+  background-color: #0075ff;
+  -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+          box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 14px;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.form__button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #004ba1; }
+
+@media (min-width: 320px) and (max-width: 730px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .contact__info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 320px;
+      padding-left: 21px; }
+    .contact__form {
+      width: 280px;
+      padding-left: 0;
+      margin-bottom: 60px; }
+  .info__item {
+    margin: 0; } }
+
+/*# sourceMappingURL=contacts.css.map */

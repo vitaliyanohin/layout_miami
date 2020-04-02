@@ -1,0 +1,83 @@
+.gallery__image {
+  width: calc(50% - 10px);
+  height: 256px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 8px; }
+
+.gallery__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .gallery__photos__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .gallery__photos__right__image:first-child {
+      width: calc(33% - 10px); }
+    .gallery__photos__right__image:last-child {
+      width: calc(67% - 10px); }
+  .gallery__photos__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .gallery__photos__left__image:first-child {
+      width: calc(67%); }
+    .gallery__photos__left__image:last-child {
+      width: calc(33% - 20px); }
+
+.gallery__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-bottom: 88px;
+  height: 56px;
+  width: 186px;
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #f7f8ff;
+  border: 2px solid #0075ff;
+  border-radius: 8px;
+  color: #0075ff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.gallery__button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #0075ff; }
+
+@media (min-width: 320px) and (max-width: 730px) {
+  .gallery__image {
+    height: 137px;
+    width: calc(50% - 5px); }
+  .gallery__photos__left__image:first-child {
+    width: calc(50% - 5px); }
+  .gallery__photos__left__image:last-child {
+    width: calc(50% - 5px); }
+  .gallery__photos__right__image:first-child {
+    width: calc(50% - 5px); }
+  .gallery__photos__right__image:last-child {
+    width: calc(50% - 5px); } }
+
+/*# sourceMappingURL=gallery.css.map */
