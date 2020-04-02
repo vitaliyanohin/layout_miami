@@ -1,0 +1,51 @@
+@import "variables";
+@import "mixins";
+
+.consultation {
+  display: flex;
+  justify-content: space-around;
+
+  &__header {
+    width: 412px;
+  }
+  
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 412px;
+  }
+}
+
+.form__item {
+  width: 92%;
+  background-color: $main-gray;
+  border: 1px solid $main-white;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 17px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #b9c1ce;
+}
+
+.form__button {
+  @include form__button;
+}
+
+.form__button:hover {
+  @include hover__button($main-white,#004ba1);
+}
+
+@media (min-width: 320px) and (max-width: 770px) {
+  .consultation {
+    flex-direction: column;
+    align-items: center;
+    &__header {
+      width: 280px;
+    }
+    
+    &__form {
+      width: 280px;
+    }
+  }
+}
