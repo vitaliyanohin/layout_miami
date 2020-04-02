@@ -7,7 +7,7 @@
 .header {
   margin: 0;
   height: 700px;
-  background-image: url("/images/header.png");
+  background-image: url("../images/header.png");
   background-size: cover;
   background-position: center;
   padding: 24px 120px;
