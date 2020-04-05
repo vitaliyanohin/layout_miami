@@ -17,6 +17,8 @@
     &__right {
       @include flex-set;
       &__image {
+        border-radius: 8px;
+
         &:first-child {
           width: calc(33% - 10px);
         }
@@ -29,6 +31,8 @@
     &__left {
       @include flex-set;
       &__image {
+        border-radius: 8px;
+        
         &:first-child {
           width: calc(67%);
         }

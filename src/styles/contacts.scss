@@ -43,7 +43,6 @@
 }
 
 .form__item {
-  width: 92%;
   background-color: $main-gray;
   border: 1px solid $main-white;
   border-radius: 8px;
@@ -88,7 +87,7 @@
     }
 
     &__form {
-      width: 280px;
+      max-width: 280px;
       padding-left: 0;
       margin-bottom: 60px;
     }
