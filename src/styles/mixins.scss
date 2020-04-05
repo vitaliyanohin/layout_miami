@@ -1,0 +1,25 @@
+@import "variables";
+
+@mixin flex-set {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin form__button {
+  height: 56px;
+  margin-top: 24px;
+  background-color: $main-blue;
+  box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 14px;
+  color: $main-white;
+  transition: 0.3s;
+}
+
+@mixin hover__button($text-color, $bg-color) {
+  cursor: pointer;
+  color: $text-color;
+  background-color: $bg-color;
+}
